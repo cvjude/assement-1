@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+  color: #333;
+}
+
+body {
+  /* background: black; */
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.relative {
+  position: relative;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/** navbar */
+.main-nav {
+  height: 80px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.main-nav .links {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style-type: none;
+}
+
+.main-nav .links li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 14.5px;
+}
+
+.main-nav .links li a {
+  color: white;
+}
+
+/** banner */
+.banner {
+  background-image: url(./imgs/curve.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 90vh;
+}
+
+.banner .land {
+  position: absolute;
+  width: 100%;
+  bottom: -100px;
+  object-position: bottom;
+  object-fit: cover;
+}
+
+.banner-content {
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.banner-content .text-sec {
+  width: 50%;
+}
+
+.banner-content .text-sec .centered {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.banner-content .text-sec h1 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.banner-content .text-sec p {
+  color: white;
+  font-size: 20px;
+}
+
+.banner-content .img-sec {
+  width: 45%;
+}
+
+.banner-content .img-sec img {
+  object-fit: contain;
+}
